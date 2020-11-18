@@ -9,7 +9,7 @@ const styles = {
     display: [`none`, `none`, `block`],
     // Switch Body
     '&.rc-switch': {
-      background: `linear-gradient(45deg, #FF7D6B, #FFD64C)`,
+      background: `linear-gradient(45deg, #3366FF, #AC15B8)`,
       border: 0,
       width: 50,
       height: 24,
@@ -18,7 +18,7 @@ const styles = {
       },
     },
     '&.rc-switch-checked': {
-      background: `linear-gradient(45deg, #3366FF, #AC15B8)`,
+      background: `linear-gradient(45deg, #FF7D6B, #FFD64C)`,
       border: 0,
     },
     // Switch Handle
@@ -50,7 +50,7 @@ const styles = {
 
 export const HeaderColorMode = () => {
   const [colorMode, setColorMode] = useColorMode()
-  const isDark = colorMode === `dark`
+  const isDark = colorMode === `default`
 
   const handleChange = () =>
     setColorMode(colorMode === 'default' ? 'dark' : 'default')
@@ -71,8 +71,8 @@ export const HeaderColorMode = () => {
         onChange={handleChange}
         onClick={handleChange}
         checked={isDark}
-        checkedChildren={<FaMoon size={16} css={css(styles.icon)} />}
-        unCheckedChildren={<FaSun size={16} css={css(styles.icon)} />}
+        unCheckedChildren={<FaMoon size={16} css={css(styles.icon)} />}
+        checkedChildren={<FaSun size={16} css={css(styles.icon)} />}
         css={css(styles.switch)}
       />
     </Box>

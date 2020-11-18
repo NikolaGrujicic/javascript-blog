@@ -73,6 +73,7 @@ const Seo = ({
       title={title}
       titleTemplate={`%s | ${site.title}`}
       meta={metaTags}
+      defer={false}
     >
       {children}
     </Helmet>

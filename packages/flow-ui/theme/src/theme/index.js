@@ -20,7 +20,6 @@ import layout from './layout'
 import global from './global'
 
 export default merge(typography, {
-  // initialColorMode: `light`,
   colors,
   prism,
   breakpoints,

@@ -30,12 +30,44 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Frameless Grid`,
+        short_name: `Frameless Grid`,
+        start_url: `/`,
+        display: `standalone`,
+        icon: `content/assets/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-3W171FB282",
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-helmet`
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/category/*`],
+      },
+    },
   ],
   // Customize your site metadata:
   siteMetadata: {
     //General Site Metadata
     title: 'Frameless Grid',
     name: 'Frameless Grid',
+    siteUrl: `https://www.framelessgrid.com`,
     description: 'My site description...',
     address: 'Barcelona, Spain',
     email: 'nikola.grujicic.03@gmail.com',
@@ -84,7 +116,7 @@ module.exports = {
           },
           {
             name: 'About Us',
-            slug: '/about'
+            slug: '/contact'
           },
           {
             name: 'Contact Us',
@@ -110,5 +142,5 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
 }
