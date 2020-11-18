@@ -68,7 +68,7 @@ module.exports = {
     title: 'Frameless Grid',
     name: 'Frameless Grid',
     siteUrl: `https://www.framelessgrid.com`,
-    description: 'My site description...',
+    description: 'React JS Blog',
     address: 'Barcelona, Spain',
     email: 'nikola.grujicic.03@gmail.com',
     phone: '+1 (888) 888-8888',
