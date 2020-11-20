@@ -34,7 +34,7 @@ const omega = {
 }
 
 export default {
-  initialColorModeName: 'dark',
+  initialColorModeName: 'default',
   text: colors.gray[600],
   article: colors.gray[700],
   heading: colors.gray[800],

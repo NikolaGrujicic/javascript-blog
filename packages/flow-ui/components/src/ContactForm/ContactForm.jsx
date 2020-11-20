@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Box, Label, Input, Textarea, Button, Message, Spinner } from 'theme-ui'
 
 const ContactForm = ({ handleSubmit, submitting, success }) => (
-  <form onSubmit={handleSubmit}>
+  <form onSubmit={handleSubmit} name="contact" data-netlify="true">
     {success && (
       <Message variant='success'>
         Thank you for contacting us. We'll get back to you soon!
