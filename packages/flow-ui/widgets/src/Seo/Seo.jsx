@@ -46,6 +46,7 @@ const Seo = ({
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:creator', content: twitter.url },
+    { name: 'google-site-verification', content: 'rdHgeMNE19n12zlkjsfSKFLDS23MuTFSHl8lQPesFHLk21oU' },
   ]
 
   if (keywords && keywords.length > 0) {
